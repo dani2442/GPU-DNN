@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Callback">
+      <UniqueIdentifier>{9d6f7dd8-9b3d-457e-9127-cf20db0fc605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimizer">
+      <UniqueIdentifier>{3eb57afa-3094-44f4-ad71-ab643957e188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layer">
+      <UniqueIdentifier>{ea4945ce-221a-4dbf-a11c-d17346f63a4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Output">
+      <UniqueIdentifier>{6b4961ad-5134-415c-a597-d78eecb3b7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{1e0ece26-f463-4497-a9e1-178f5670c8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activation">
+      <UniqueIdentifier>{a79a0fba-d315-4dbd-b785-43be74420d4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DNN.cuh" />
+    <ClInclude Include="Layer.cuh" />
+    <ClInclude Include="Optimizer.cuh" />
+    <ClInclude Include="Callback.cuh" />
+    <ClInclude Include="Output.cuh" />
+    <ClInclude Include="RNG.cuh" />
+    <ClInclude Include="Layer\FullyConnected.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Random.cuh">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuralNetwork.cuh" />
+    <ClInclude Include="Activation\ReLU.cuh">
+      <Filter>Activation</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Shuffle.cuh">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Optimizer\SGD.cuh">
+      <Filter>Optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Output\RegressionMSE.cuh">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="Callback\verbosecallback.cuh">
+      <Filter>Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DataSet.cuh">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Error.cuh">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Matrix.cuh">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Activation\Sigmoid.cuh">
+      <Filter>Activation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="main.cu" />
+  </ItemGroup>
+</Project>
